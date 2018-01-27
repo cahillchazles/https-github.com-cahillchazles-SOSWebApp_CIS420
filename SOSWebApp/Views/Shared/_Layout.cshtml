@@ -6,46 +6,81 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="header">
-      <img src="~/Content/images/heartbeat-background.png" alt="Sample Photo" />
-    </div>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+        <img src="~/Content/images/heartbeat-background.png" alt="Sample Photo" />
+    </div>      
+    <div class="navbar">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <button type="button" class="btn btn-primary">Home</button>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-primary">About Us</button>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="/Home/About">Staff</a>
+                            <a class="dropdown-item" href="/Home/About">Our Stories</a>
+                            <a class="dropdown-item" href="/Home/About">Board Of Directors</a>
+                            <a class="dropdown-item" href="/Home/About">Patient Testimonials</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Language</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="/Home/About">Spanish</a>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Home", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Language", "About", "Home")</li>
-                    <li>@Html.ActionLink("Get Involved", "Index", "Volunteers")</li>
-                    <li>@Html.ActionLink("Refer A Patient", "About", "Home")</li>
-                    <li>@Html.ActionLink("Get Help", "About", "Home")</li>
-                    <li>@Html.ActionLink("Events", "About", "Home")</li>
-                    <li>@Html.ActionLink("Donate", "About", "Home")</li>
-                    <li>@Html.ActionLink("Staff Access", "About", "Home")</li>
-                </ul>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Get Involved</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="/Home/About">Physician Volunteer Form</a>
+                        <a class="dropdown-item" href="/Home/About">Non-Physician Clinical Volunteer Application</a>
+                        <a class="dropdown-item" href="/Home/About">General (Non-Clinical and Student) Volunteer Form</a>
+                        <a class="dropdown-item" href="/Home/About">Medical Interpreter Volunteer Form</a>
+                    </div>
+                </div>
+            </div>                
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Refer Patient</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Get Help</button>
+            <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="/Home/About">Partner Clinics</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Events</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Donate</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Staff Access</button>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
