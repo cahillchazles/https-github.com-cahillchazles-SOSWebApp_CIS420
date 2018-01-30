@@ -17,5 +17,9 @@ namespace SOSWebApp.Controllers
         {
             return View();
         }
+        public ActionResult GetNonPhysicianForm()
+        {
+            return View();
+        }
     }
 }

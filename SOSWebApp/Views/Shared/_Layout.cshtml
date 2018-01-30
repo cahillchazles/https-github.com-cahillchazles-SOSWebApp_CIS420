@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="btn btn-primary">Home</button>
+                <a href="/Home/Home" class="btn btn-primary">Home</a>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                     <button type="button" class="btn btn-primary">About Us</button>
                     <div class="btn-group" role="group">
@@ -38,14 +38,15 @@
                 </div>
             </div>
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                <button type="button" class="btn btn-primary">Get Involved</button>
+                <a href="/VolunteersForm/GetPhysicianForm" class="btn btn-primary">Get Involved</a>
                 <div class="btn-group" role="group">
                     <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                         <a class="dropdown-item" href="/VolunteersForm/GetPhysicianForm">Physician Volunteer Form</a>
-                        <a class="dropdown-item" href="/Home/About">Non-Physician Clinical Volunteer Application</a>
+                        <a class="dropdown-item" href="/VolunteersForm/GetNonPhysicianForm">Non-Physician Clinical Volunteer Application</a>
                         <a class="dropdown-item" href="/Home/About">General (Non-Clinical and Student) Volunteer Form</a>
                         <a class="dropdown-item" href="/Home/About">Medical Interpreter Volunteer Form</a>
+                        <a class="dropdown-item" href="/Home/About">Volunteer Comment Form</a>
                     </div>
                 </div>
             </div>                
@@ -77,6 +78,7 @@
             <footer>
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>
+        </div>
         </div>
 
         @Scripts.Render("~/bundles/jquery")
