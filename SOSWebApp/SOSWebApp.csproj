@@ -194,6 +194,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PartnerClinicController.cs" />
     <Compile Include="Controllers\VolunteersController.cs" />
     <Compile Include="Controllers\VolunteersFormController.cs" />
     <Compile Include="Global.asax.cs">
@@ -207,6 +208,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PartnerClinic.cs" />
     <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -218,6 +220,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\cropped-cropped-fcc-updated.png" />
     <Content Include="Content\images\heartbeat-background.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -323,6 +326,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\VolunteersForm\GetPhysicianForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
+    <Content Include="Views\PartnerClinic\GetPartnerClinic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
