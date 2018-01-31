@@ -192,6 +192,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
@@ -222,6 +223,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\cropped-cropped-fcc-updated.png" />
     <Content Include="Content\images\heartbeat-background.png" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -327,6 +329,7 @@
     <Content Include="Views\VolunteersForm\GetPhysicianForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
     <Content Include="Views\PartnerClinic\GetPartnerClinic.cshtml" />
+    <Content Include="Views\Donate\GetDonate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
