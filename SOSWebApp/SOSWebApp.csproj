@@ -224,6 +224,7 @@
     <Content Include="Content\images\cropped-cropped-fcc-updated.png" />
     <Content Include="Content\images\heartbeat-background.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\standard_Volunteer.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
