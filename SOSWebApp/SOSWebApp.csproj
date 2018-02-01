@@ -196,6 +196,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
+    <Compile Include="Controllers\ReferAPatientController.cs" />
     <Compile Include="Controllers\VolunteersController.cs" />
     <Compile Include="Controllers\VolunteersFormController.cs" />
     <Compile Include="Global.asax.cs">
@@ -334,6 +335,7 @@
     <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetVolunteerCommentForm.cshtml" />
+    <Content Include="Views\ReferAPatient\ReferAPatient.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
