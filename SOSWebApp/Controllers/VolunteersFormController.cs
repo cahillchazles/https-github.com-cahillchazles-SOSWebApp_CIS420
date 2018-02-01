@@ -21,5 +21,18 @@ namespace SOSWebApp.Controllers
         {
             return View();
         }
+        public ActionResult GetNonClinicForm()
+        {
+            return View();
+        }
+        public ActionResult GetInterpreterForm()
+        {
+            return View();
+        }
+        public ActionResult GetVolunteerCommentForm()
+        {
+            return View();
+        }
+
     }
 }

@@ -330,6 +330,9 @@
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
     <Content Include="Views\PartnerClinic\GetPartnerClinic.cshtml" />
     <Content Include="Views\Donate\GetDonate.cshtml" />
+    <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
+    <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
+    <Content Include="Views\VolunteersForm\GetVolunteerCommentForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
