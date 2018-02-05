@@ -72,11 +72,15 @@
             background: #55ACEE;
             color: white;
         }
+        body {
+            padding: 0;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Surgery On Sunday Louisville</a>
+        <a class="navbar-brand" href="/Home/Home">Surgery On Sunday Louisville</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -129,15 +133,15 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/VolunteersForm/GetNonPhysicianForm">Non-Physician Clinical Volunteer Application</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Home/About">General (Non-Clinical and Student) Volunteer Form</a>
+                        <a class="dropdown-item" href="/VolunteersForm/GetNonClinicForm">General (Non-Clinical and Student) Volunteer Form</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Home/About">Medical Interpreter Volunteer Form</a>
+                        <a class="dropdown-item" href="/VolunteersForm/GetInterpreterForm">Medical Interpreter Volunteer Form</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Home/About">Volunteer Comment Form</a>
+                        <a class="dropdown-item" href="/VolunteersForm/GetVolunteerCommentForm">Volunteer Comment Form</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ReferAPatient/Refer">Refer A Patient</a>
+                    <a class="nav-link" href="/ReferAPatient/ReferAPatient">Refer A Patient</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -152,7 +156,10 @@
                     <a class="nav-link" href="/Home/About">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Donate/GetDonate">Donate</a>
+                    <a class="nav-link" href="https://soslouisville.kindful.com/">Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/StaffAccess/GetLoginScreen">Staff Access</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -160,7 +167,6 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -170,16 +176,16 @@
         <div class="wrap">
             <div class="centered">
                 <p>
-                    See our other pages:<br />
-                    <a href="/Home/Home">Home</a><br />
-                    <a href="/ReferAPatient/ReferAPatient">Refer A Patient</a>  <br />
+                    Contact Us:<br />
 
                 </p>
             </div>
             <div class="right">
                 <p>Follow us on social media:</p>
                 <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
+                <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a><br/>
+                <img src="~/Content/images/surgery-on-sunday-louisville-heartbeat_Croped.png" alt="Sample Photo" height="150" width="200" border="0"/>
+
             </div>
             <div class="left">
                 <p>
@@ -193,7 +199,6 @@
             </div>
         </div>
     </footer>
-    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

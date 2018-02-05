@@ -4,6 +4,49 @@
 }
 <div style="margin: 0; display: inline-block;"><img src="~/Content/images/standard_Volunteer.jpg" alt="Sample Photo" /></div>
 <section class="container"></section>
-<h2>GetVolunteerCommentForm</h2>
+<center><h2>Volunteer Comment Form</h2>
 <section class="container"></section>
+<div class="grid-50 tablet-grid-50 mobile-grid-100">
+    <div class="infoCard formPanel campaignInfo">
+        <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+            <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BYDP9ge496/0RdU9ydlOhmZcnDVuGdIiGmmZ0Y2ZpBUEwS1QqTQkB7RkB2VJa82OwM/9aKxjCJny3QiK59jthQ==" />
 
+            <h2 id="registration_form_heading"></h2>
+
+            <div id="error_explanation">
+                <ul></ul>
+            </div>
+
+            <input type="hidden" value="9e4849a1-21c4-493a-9a8d-36f738172fc0" name="registration[registration_form_id]" id="registration_registration_form_id" />
+
+
+            <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
+
+            <div class="control_row">
+                <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+            </div>
+
+            <div class="control_row">
+                <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+            </div>
+
+            <div class="control_row">
+                <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="1000" aria-required="true" type="email" size="1000" value="" /></div></div>
+
+            </div>
+            <br/><div class="control_row">
+                <div class="control-group text optional registration_person_custom_field_answers_12897">
+                    <label class="text optional control-label" for="registration_person_attributes_custom_field_answers_12897">Please leave a comment:</label><div class="controls">
+                        <br/><textarea rows="4" class="text optional " id="registration_person_attributes_custom_field_answers_12897" name="registration[person_attributes][custom_field_answers][12897]" maxlength="1000">
+</textarea>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <input type="submit" name="commit" value="Submit" class="btn btn btn-success btn-lg" data-disable-with="Saving..." />
+</form>
+        </div>
+    </div>
+</center>

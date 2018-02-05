@@ -197,6 +197,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
     <Compile Include="Controllers\ReferAPatientController.cs" />
+    <Compile Include="Controllers\StaffAccessController.cs" />
     <Compile Include="Controllers\VolunteersController.cs" />
     <Compile Include="Controllers\VolunteersFormController.cs" />
     <Compile Include="Global.asax.cs">
@@ -226,6 +227,7 @@
     <Content Include="Content\images\heartbeat-background.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\standard_Volunteer.jpg" />
+    <Content Include="Content\images\surgery-on-sunday-louisville-heartbeat_Croped.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -336,6 +338,8 @@
     <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetVolunteerCommentForm.cshtml" />
     <Content Include="Views\ReferAPatient\ReferAPatient.cshtml" />
+    <Content Include="Views\StaffAccess\GetLoginScreen.cshtml" />
+    <Content Include="Views\StaffAccess\StaffAccessScreen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
