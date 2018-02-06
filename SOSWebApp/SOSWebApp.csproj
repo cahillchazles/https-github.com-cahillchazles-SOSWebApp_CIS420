@@ -275,6 +275,7 @@
     <Content Include="Content\images\1005133.webp" />
     <Content Include="Content\images\IMG_0004-e1515639329273.webp" />
     <Content Include="Content\images\Picture1.webp" />
+    <None Include="Properties\PublishProfiles\red.cis420.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
