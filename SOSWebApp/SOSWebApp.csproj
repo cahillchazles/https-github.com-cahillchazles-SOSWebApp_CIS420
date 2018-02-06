@@ -340,6 +340,15 @@
     <Content Include="Views\ReferAPatient\ReferAPatient.cshtml" />
     <Content Include="Views\StaffAccess\GetLoginScreen.cshtml" />
     <Content Include="Views\StaffAccess\StaffAccessScreen.cshtml" />
+    <Content Include="Views\StaffAccess\GetCreateEvents.cshtml" />
+    <Content Include="Views\StaffAccess\GetManageEvents.cshtml" />
+    <Content Include="Views\StaffAccess\GetReports.cshtml" />
+    <Content Include="Views\StaffAccess\GetScheduleVolunteers.cshtml" />
+    <Content Include="Views\StaffAccess\GetManageVolunteers.cshtml" />
+    <Content Include="Views\StaffAccess\GetModifyPhysicianVolunteers.cshtml" />
+    <Content Include="Views\StaffAccess\GetModifyNonPhysicianVolunteers.cshtml" />
+    <Content Include="Views\StaffAccess\GetModifyNonClinicalVolunteers.cshtml" />
+    <Content Include="Views\StaffAccess\GetModifyMedicalInterpreterVolunteers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

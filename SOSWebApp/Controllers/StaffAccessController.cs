@@ -21,5 +21,41 @@ namespace SOSWebApp.Controllers
         {
             return View();
         }
+        public ActionResult GetCreateEvents()
+        {
+            return View();
+        }
+        public ActionResult GetManageEvents()
+        {
+            return View();
+        }
+        public ActionResult GetReports()
+        {
+            return View();
+        }
+        public ActionResult GetManageVolunteers()
+        {
+            return View();
+        }
+        public ActionResult GetScheduleVolunteers()
+        {
+            return View();
+        }
+        public ActionResult GetModifyPhysicianVolunteers()
+        {
+            return View();
+        }
+        public ActionResult GetModifyNonPhysicianVolunteers()
+        {
+            return View();
+        }
+        public ActionResult GetModifyNonClinicalVolunteers()
+        {
+            return View();
+        }
+        public ActionResult GetModifyMedicalInterpreterVolunteers()
+        {
+            return View();
+        }
     }
 }

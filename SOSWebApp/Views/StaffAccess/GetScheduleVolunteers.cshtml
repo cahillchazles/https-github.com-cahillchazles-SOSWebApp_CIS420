@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "GetScheduleVolunteers";
+}
+<br />
+<br />
+<br />
+<br />
+<center>
+    <h2>Schedule Volunteers:</h2>
+    <form>
+        <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="infoCard formPanel campaignInfo">
+                <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                    <h3>Please select an Event to schedule volunteers for:</h3>
+                    <div class="control_row">
+                        <div class="control-group select required registration_person_custom_field_answers_12895">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="infoCard formPanel campaignInfo">
+                <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                    <h3>Please select a volunteer type to schedule:</h3>
+                    <div class="control_row">
+                        <div class="control-group select required registration_person_custom_field_answers_12895">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="infoCard formPanel campaignInfo">
+                <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                    <h3>Please select a volunteer to schedule:</h3>
+                    <div class="control_row">
+                        <div class="control-group select required registration_person_custom_field_answers_12895">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <br />
+        <button type="button" class="btn btn-primary">Select</button>
+        <br />
+        <br />
+        <div class="control_row">
+            <h3>List of Volunteers Scheduled:</h3>
+            <br />
+
+            <input name="registration[person_attributes][custom_field_answers][12935][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12935" name="registration[person_attributes][custom_field_answers][12935][]">
+                <option value="List of Scheduled Volunteers">List of Scheduled Volunteers</option>
+            </select>
+        </div>
+        <br />
+        <br />
+        <button type="button" class="btn btn-primary">Schedule</button>
+        <br/>
+        <br/>
+        <a href="/StaffAccess/StaffAccessScreen">
+            <button type="button" class="btn btn-primary">Back</button>
+        </a>
+    </form>
+</center>

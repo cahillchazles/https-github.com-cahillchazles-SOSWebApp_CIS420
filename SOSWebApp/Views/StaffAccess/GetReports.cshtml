@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "GetReports";
+}
+
+<br />
+<br />
+<br />
+<br />
+<center>
+    <h2>Reports:</h2><br/><br/>
+    <div class="grid-50 tablet-grid-50 mobile-grid-100">
+        <div class="infoCard formPanel campaignInfo">
+            <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                <div class="control_row">
+                    <div class="control-group select required registration_person_custom_field_answers_12895">
+                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr>Select an event to generate a report:</label><div class="controls"><br/>
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br/>
+                <button type="button" class="btn btn-primary">Generate Report</button>
+                <br />
+                <br />
+                <a href="/StaffAccess/StaffAccessScreen">
+                    <button type="button" class="btn btn-primary">Back</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</center>
