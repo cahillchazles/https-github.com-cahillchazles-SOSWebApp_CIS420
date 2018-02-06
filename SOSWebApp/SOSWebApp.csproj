@@ -191,6 +191,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
@@ -224,11 +225,25 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\board1.jpg" />
+    <Content Include="Content\images\board10.jpg" />
+    <Content Include="Content\images\board11.jpg" />
+    <Content Include="Content\images\board2.jpg" />
+    <Content Include="Content\images\board3.jpg" />
+    <Content Include="Content\images\board4.jpg" />
+    <Content Include="Content\images\board5.jpg" />
+    <Content Include="Content\images\board6.jpg" />
+    <Content Include="Content\images\board7.jpg" />
+    <Content Include="Content\images\board8.jpg" />
+    <Content Include="Content\images\board9.jpg" />
     <Content Include="Content\images\cropped-cropped-fcc-updated.png" />
     <Content Include="Content\images\heartbeat-background.png" />
+    <Content Include="Content\images\IMG_1133.jpg" />
+    <Content Include="Content\images\IMG_5892.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\standard_Volunteer.jpg" />
     <Content Include="Content\images\surgery-on-sunday-louisville-heartbeat_Croped.png" />
+    <Content Include="Content\images\tatyiana.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -257,6 +272,9 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\images\1005133.webp" />
+    <Content Include="Content\images\IMG_0004-e1515639329273.webp" />
+    <Content Include="Content\images\Picture1.webp" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -351,6 +369,11 @@
     <Content Include="Views\StaffAccess\GetModifyNonClinicalVolunteers.cshtml" />
     <Content Include="Views\StaffAccess\GetModifyMedicalInterpreterVolunteers.cshtml" />
     <Content Include="Views\Events\GetCalendar.cshtml" />
+    <Content Include="Views\AboutUs\aboutUs.cshtml" />
+    <Content Include="Views\AboutUs\board.cshtml" />
+    <Content Include="Views\AboutUs\staff.cshtml" />
+    <Content Include="Views\AboutUs\stories.cshtml" />
+    <Content Include="Views\AboutUs\testimonials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
