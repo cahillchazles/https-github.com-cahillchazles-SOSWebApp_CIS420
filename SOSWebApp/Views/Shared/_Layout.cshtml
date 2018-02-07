@@ -10,7 +10,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    @*<nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/Home/Home"><font color="white">SOS Louisville</font></a>
@@ -87,39 +87,40 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-        @*<a class="navbar-brand" href="/Home/Home">Surgery On Sunday Louisville</a>
+        </div>*@
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/Home/Home">Surgery On Sunday Louisville</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>*@
+        </button>
 
-    @*<div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/Home/Home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/Home/About">Staff</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/Home/About">Our Stories</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/Home/About">Board Of Directors</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/Home/About">Patient Testimonials    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Language
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item">*@
-    <!--Enables Google Translate Functionality-->
-    @*<div id="google_translate_element"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/Home/About">Staff</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/Home/About">Our Stories</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/Home/About">Board Of Directors</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/Home/About">Patient Testimonials    </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">
+                            <!--Enables Google Translate Functionality-->
+                            <div id="google_translate_element"></div>
                             <script type="text/javascript">
                                 function googleTranslateElementInit() {
                                     new google.translate.TranslateElement({
@@ -174,15 +175,15 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-        </div>*@
-</nav>
+        </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
     </div>
 
     <footer id="footer">
-        <div class="wrap row">
+        <div class="wrap-row">
             <div class="col-xs-4">
                 <p>
                     Get Involved:<br />
