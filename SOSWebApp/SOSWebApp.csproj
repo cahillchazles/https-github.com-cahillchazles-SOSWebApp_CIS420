@@ -237,6 +237,7 @@
     <Content Include="Content\images\board8.jpg" />
     <Content Include="Content\images\board9.jpg" />
     <Content Include="Content\images\cropped-cropped-fcc-updated.png" />
+    <Content Include="Content\images\EventCalendar.png" />
     <Content Include="Content\images\heartbeat-background.png" />
     <Content Include="Content\images\IMG_1133.jpg" />
     <Content Include="Content\images\IMG_5892.jpg" />
