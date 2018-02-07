@@ -89,6 +89,12 @@ textarea {
     text-align:center; /* claim the left over width between these 25% floats */
 }
 
+.button-wrapper{
+    text-align:center;
+    display:inline-block;
+    margin:10px;
+}
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
