@@ -77,16 +77,16 @@ textarea {
 
 .left {
     float: left;
-    width: 25%;
+    text-align: left;
 }
 
 .right {
     float: right;
-    width: 25%;
+    text-align:right;
 }
 
 .centered {
-    overflow: hidden; /* claim the left over width between these 25% floats */
+    text-align:center; /* claim the left over width between these 25% floats */
 }
 
 .fa-twitter {
