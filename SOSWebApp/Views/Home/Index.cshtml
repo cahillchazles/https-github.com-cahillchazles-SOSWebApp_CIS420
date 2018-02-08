@@ -2,47 +2,64 @@
     ViewBag.Title = "Home";
 }
 <body>
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <br />
+    <br />
+    <br />
     <div class="header">
         @*<img src="~/Content/images/heartbeat-background.png" alt="Sample Photo" />*@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="~/Content/images/heartbeat-background.png" alt="First slide">
+                    <img class="d-block w-100" src="~/Content/images/image_insurgery_04.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h1><span style="color: #e31e1e;"></span></h1>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="~/Content/images/surgery-on-sunday-louisville-heartbeat_updated1.png" alt="Second slide">
+                    <img class="d-block w-100" src="~/Content/images/image_03.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="~/Content/images/cropped-img_soscoverpage.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="~/Content/images/standard_Volunteer.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/Content/images/awards_pic.jpg" alt="Fourth slide">
+
                 </div>
             </div>
         </div>
     </div>
-    <section class="container"></section>
-    <p>
-        <h1><span style="color:#ff0000;width: 50%; margin-left:auto; margin-right:auto;">We are Surgery on Sunday Louisville, Inc.</span></h1>
+    <section class="container"></section><br />
+    <center>
+        <section class="container">
+            <center><font color="red"><h3>Follow us on Facebook and Twitter:</h3></font></center>
+            <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
+        </section>
+    </center>
+    <br />
+    <br />
+    <br />
+    <font color="red"><h2>Surgery On Sunday – Louisville, Inc.</h2></font><br />
+    <h4 style="text-align:justify;"> provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.  <span style="color:#ff0000;">Our patients never see a bill</span>. We are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.</h4>
+    <br />
+    <br />
+    <center><font color="red"><h3>Check us out on Facebook and Twitter:</h3></font><br /></center>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSurgeryonSundayLouisville%2F%20&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="600" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-        <hr />
 
-        <h3 style="text-align:justify;">Surgery On Sunday – Louisville, Inc. provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.  <span style="color:#ff0000;">Our patients never see a bill</span>. We are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.</h3>
-    </p>
-    <p>Use this area to provide additional information.</p>
+    <a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" data-link-color="#E81C4F" href="https://twitter.com/soslouisville?ref_src=twsrc%5Etfw">Tweets by soslouisville</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
 </body>
-
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
