@@ -1,0 +1,272 @@
+﻿
+@{
+    ViewBag.Title = "GetNonPhysicianForm";
+}
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <img src="~/Content/images/standard_Volunteer.jpg" alt="Sample Photo" />
+    <section class="container"></section>
+    <center>
+        <h2>Non-Physician Volunteer Form</h2>
+        <section class="container"></section>
+        <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="infoCard formPanel campaignInfo">
+                <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4ZqthmCi2oBlvinBF1CYXynI5oSKEUvhBKrVbB2FItZmO/0Bl68PIdtyizrQym7XRN7jzKh64D9Yf0VZHM0GLA==" />
+
+                    <h2 id="registration_form_heading"></h2>
+
+                    <div id="error_explanation">
+                        <ul></ul>
+                    </div>
+
+                    <input type="hidden" value="e99ba2ff-94b7-431c-a29b-28282c56b880" name="registration[registration_form_id]" id="registration_registration_form_id" />
+
+
+                    <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="1000" aria-required="true" type="email" size="1000" value="" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_address"><label class="string required control-label" for="registration_person_attributes_address"><abbr title="required">*</abbr> Address</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_address" name="registration[person_attributes][address]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_city"><label class="string required control-label" for="registration_person_attributes_city"><abbr title="required">*</abbr> City</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_city" name="registration[person_attributes][city]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_state"><label class="string required control-label" for="registration_person_attributes_state"><abbr title="required">*</abbr> State</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_state" name="registration[person_attributes][state]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_postal_code"><label class="string required control-label" for="registration_person_attributes_postal_code"><abbr title="required">*</abbr> Postal Code</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_postal_code" name="registration[person_attributes][postal_code]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group tel required registration_person_mobile_phone"><label class="tel required control-label" for="registration_person_attributes_mobile_phone"><abbr title="required">*</abbr> Mobile Phone</label><div class="controls"><input required="required" class="string tel required " id="registration_person_attributes_mobile_phone" name="registration[person_attributes][mobile_phone]" maxlength="1000" aria-required="true" type="tel" size="1000" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_birthday"><label class="string required control-label" for="registration_person_attributes_birthday"><abbr title="required">*</abbr> Birthday</label><div class="controls"><input required="required" class="string required datepicker" id="registration_person_attributes_birthday" name="registration[person_attributes][birthday]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string optional registration_person_preferred_name"><label class="string optional control-label" for="registration_person_attributes_preferred_name">Preferred Name</label><div class="controls"><input class="string optional " id="registration_person_attributes_preferred_name" name="registration[person_attributes][preferred_name]" maxlength="1000" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="control_row">
+                        <label>* What is/are your professional title(s)</label>
+                        <br />
+
+                        <input name="registration[person_attributes][custom_field_answers][12894][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12894" name="registration[person_attributes][custom_field_answers][12894][]">
+                            <option value="Surgical Technician">Surgical Technician</option>
+                            <option value="CRNA">CRNA</option>
+                            <option value="RN">RN</option>
+                            <option value="CNA">CNA</option>
+                            <option value="PCA">PCA</option>
+                            <option value="PA">PA</option>
+                            <option value="EMT">EMT</option>
+                            <option value="COA">COA</option>
+                            <option value="COT">COT</option>
+                            <option value="APRN">APRN</option>
+                            <option value="MD">MD</option>
+                            <option value="OTHER">OTHER</option>
+                            <option value="No Applicable Professional Title">No Applicable Professional Title</option>
+                        </select>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="control_row">
+                        <label>* What/which state(s) are you licensed to practice in? </label>
+                        <br />
+
+                        <input name="registration[person_attributes][custom_field_answers][12935][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12935" name="registration[person_attributes][custom_field_answers][12935][]">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group string required registration_person_custom_field_answers_12936"><label class="string required control-label" for="registration_person_attributes_custom_field_answers_12936"><abbr title="required">*</abbr> Professional License Number</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_custom_field_answers_12936" name="registration[person_attributes][custom_field_answers][12936]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="control_row">
+                        <div class="control-group select required registration_person_custom_field_answers_12895">
+                            <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
+                                <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                    <option value="">Select...</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <input type="submit" name="commit" value="Submit" class="btn btn btn-success btn-lg" data-disable-with="Saving..." />
+
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>

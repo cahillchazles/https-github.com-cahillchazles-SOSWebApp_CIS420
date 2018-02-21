@@ -30,15 +30,7 @@ namespace SOSWebApp.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<SOSWebApp.Models.Volunteer> Volunteers { get; set; }
-
-        public System.Data.Entity.DbSet<SOSWebApp.Models.Physician> Physicians { get; set; }
-
-        public System.Data.Entity.DbSet<SOSWebApp.Models.NonPhysicianClinical> NonPhysicianClinicals { get; set; }
-
-        public System.Data.Entity.DbSet<SOSWebApp.Models.GeneralVolunteer> GeneralVolunteers { get; set; }
-
-        public System.Data.Entity.DbSet<SOSWebApp.Models.Interpreter> Interpreters { get; set; }
+       
 
         public System.Data.Entity.DbSet<SOSWebApp.Models.Events> Events { get; set; }
     }

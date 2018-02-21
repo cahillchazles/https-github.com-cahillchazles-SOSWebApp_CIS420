@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "GetNonClinicForm";
+}
+<img src="~/Content/images/standard_Volunteer.jpg" alt="Sample Photo" />
+<section class="container"></section>
+<center>
+    <h2>Non-Clinic Volunteer Form</h2>
+    <section class="container"></section>
+    <div class="grid-50 tablet-grid-50 mobile-grid-100">
+        <div class="infoCard formPanel campaignInfo">
+            <form class="simple_form new_registration" id="new_registration" action="/public/registrations" accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BYDP9ge496/0RdU9ydlOhmZcnDVuGdIiGmmZ0Y2ZpBUEwS1QqTQkB7RkB2VJa82OwM/9aKxjCJny3QiK59jthQ==" />
+
+                <h2 id="registration_form_heading"></h2>
+
+                <div id="error_explanation">
+                    <ul></ul>
+                </div>
+
+                <input type="hidden" value="9e4849a1-21c4-493a-9a8d-36f738172fc0" name="registration[registration_form_id]" id="registration_registration_form_id" />
+
+
+                <input type="hidden" value="2496" name="registration[person_attributes][organization_id]" id="registration_person_attributes_organization_id" />
+
+
+
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_first_name"><label class="string required control-label" for="registration_person_attributes_first_name"><abbr title="required">*</abbr> First Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_first_name" name="registration[person_attributes][first_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+
+
+
+
+
+
+                <div class="control_row">
+                    <div class="control-group string required registration_person_last_name"><label class="string required control-label" for="registration_person_attributes_last_name"><abbr title="required">*</abbr> Last Name</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_last_name" name="registration[person_attributes][last_name]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+
+
+
+
+
+
+                <div class="control_row">
+                    <div class="control-group email required registration_person_email"><label class="email required control-label" for="registration_person_attributes_email"><abbr title="required">*</abbr> Email</label><div class="controls"><input required="required" class="string email required " id="registration_person_attributes_email" name="registration[person_attributes][email]" maxlength="1000" aria-required="true" type="email" size="1000" value="" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string required registration_person_address"><label class="string required control-label" for="registration_person_attributes_address"><abbr title="required">*</abbr> Address</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_address" name="registration[person_attributes][address]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string required registration_person_city"><label class="string required control-label" for="registration_person_attributes_city"><abbr title="required">*</abbr> City</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_city" name="registration[person_attributes][city]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string required registration_person_state"><label class="string required control-label" for="registration_person_attributes_state"><abbr title="required">*</abbr> State</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_state" name="registration[person_attributes][state]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string required registration_person_postal_code"><label class="string required control-label" for="registration_person_attributes_postal_code"><abbr title="required">*</abbr> Postal Code</label><div class="controls"><input required="required" class="string required " id="registration_person_attributes_postal_code" name="registration[person_attributes][postal_code]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group tel required registration_person_mobile_phone"><label class="tel required control-label" for="registration_person_attributes_mobile_phone"><abbr title="required">*</abbr> Mobile Phone</label><div class="controls"><input required="required" class="string tel required " id="registration_person_attributes_mobile_phone" name="registration[person_attributes][mobile_phone]" maxlength="1000" aria-required="true" type="tel" size="1000" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string required registration_person_birthday"><label class="string required control-label" for="registration_person_attributes_birthday"><abbr title="required">*</abbr> Birthday</label><div class="controls"><input required="required" class="string required datepicker" id="registration_person_attributes_birthday" name="registration[person_attributes][birthday]" maxlength="1000" aria-required="true" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string optional registration_person_preferred_name"><label class="string optional control-label" for="registration_person_attributes_preferred_name">Preferred Name</label><div class="controls"><input class="string optional " id="registration_person_attributes_preferred_name" name="registration[person_attributes][preferred_name]" maxlength="1000" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group string optional registration_person_employer"><label class="string optional control-label" for="registration_person_attributes_employer">Employer</label><div class="controls"><input class="string optional " id="registration_person_attributes_employer" name="registration[person_attributes][employer]" maxlength="1000" size="1000" type="text" /></div></div>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group select required registration_person_custom_field_answers_12898">
+                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12898"><abbr title="required">*</abbr> Which best describes you?</label><div class="controls">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12898" name="registration[person_attributes][custom_field_answers][12898]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                                <option value="Undergraduate Student">Undergraduate Student</option>
+                                <option value="Medical Student (1st-3rd year)">Medical Student (1st-3rd year)</option>
+                                <option value="Medical Student (4th Year)">Medical Student (4th Year)</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="control_row">
+                    <label>* Which areas are you interested in volunteering in?</label>
+                    <br />
+
+                    <input name="registration[person_attributes][custom_field_answers][12896][]" type="hidden" value="" /><select class="multi-select required" multiple="multiple" id="registration_person_attributes_custom_field_answers_12896" name="registration[person_attributes][custom_field_answers][12896][]">
+                        <option value="Registration">Registration</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Clinical Shadowing">Clinical Shadowing</option>
+                        <option value="Fundraising">Fundraising</option>
+                    </select>
+
+                </div>
+                <div class="control_row">
+                    <div class="control-group text optional registration_person_custom_field_answers_12897">
+                        <label class="text optional control-label" for="registration_person_attributes_custom_field_answers_12897">Briefly explain to us why you are interested in serving with SOSL.</label><div class="controls">
+                            <textarea rows="4" class="text optional " id="registration_person_attributes_custom_field_answers_12897" name="registration[person_attributes][custom_field_answers][12897]" maxlength="1000">
+</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="control_row">
+                    <div class="control-group select required registration_person_custom_field_answers_12895">
+                        <label class="select required control-label" for="registration_person_attributes_custom_field_answers_12895"><abbr title="required">*</abbr> What is your T-Shirt Size?</label><div class="controls">
+                            <select required="required" id="registration_person_attributes_custom_field_answers_12895" name="registration[person_attributes][custom_field_answers][12895]" class="select required" aria-required="true">
+                                <option value="">Select...</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <input type="submit" name="commit" value="Submit" class="btn btn btn-success btn-lg" data-disable-with="Saving..." />
+            </form>
+        </div>
+    </div>
+</center>
+

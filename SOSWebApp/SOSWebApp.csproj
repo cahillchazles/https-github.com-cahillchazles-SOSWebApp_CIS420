@@ -196,16 +196,12 @@
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
-    <Compile Include="Controllers\GeneralVolunteerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InterpreterController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\NonPhysicianClinicalController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
-    <Compile Include="Controllers\PhysiciansController.cs" />
     <Compile Include="Controllers\ReferAPatientController.cs" />
     <Compile Include="Controllers\StaffAccessController.cs" />
-    <Compile Include="Controllers\VolunteersController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Controllers\VolunteersFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -221,13 +217,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Events.cs" />
-    <Compile Include="Models\GeneralVolunteer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Interpreter.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\NonPhysicianClinical.cs" />
-    <Compile Include="Models\PartnerClinic.cs" />
-    <Compile Include="Models\Physician.cs" />
     <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -420,6 +411,15 @@
     <Content Include="Views\Event\Details.cshtml" />
     <Content Include="Views\Event\Edit.cshtml" />
     <Content Include="Views\Event\Index.cshtml" />
+    <Content Include="Views\Volunteer\Create.cshtml" />
+    <Content Include="Views\Volunteer\Delete.cshtml" />
+    <Content Include="Views\Volunteer\Details.cshtml" />
+    <Content Include="Views\Volunteer\Edit.cshtml" />
+    <Content Include="Views\Volunteer\Index.cshtml" />
+    <Content Include="Views\VolunteersForm\GetPhysicianForm.cshtml" />
+    <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
+    <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
+    <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
