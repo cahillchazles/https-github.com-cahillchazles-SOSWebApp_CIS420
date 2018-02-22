@@ -193,12 +193,16 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClinicalVolunteerController.cs" />
     <Compile Include="Controllers\DonateController.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\GeneralVolunteerViewController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InterpreterVolunteerController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
+    <Compile Include="Controllers\PhysicanController.cs" />
     <Compile Include="Controllers\ReferAPatientController.cs" />
     <Compile Include="Controllers\StaffAccessController.cs" />
     <Compile Include="Controllers\VolunteerController.cs" />
@@ -214,12 +218,40 @@
     <Compile Include="Migrations\201802191711521_InitialCreate1.Designer.cs">
       <DependentUpon>201802191711521_InitialCreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802220130298_AddedVolunteers.cs" />
+    <Compile Include="Migrations\201802220130298_AddedVolunteers.Designer.cs">
+      <DependentUpon>201802220130298_AddedVolunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221447592_AddGeneralVolunteerViewModel.cs" />
+    <Compile Include="Migrations\201802221447592_AddGeneralVolunteerViewModel.Designer.cs">
+      <DependentUpon>201802221447592_AddGeneralVolunteerViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221517265_AddIDtoGeneralVolunteerViewModel.cs" />
+    <Compile Include="Migrations\201802221517265_AddIDtoGeneralVolunteerViewModel.Designer.cs">
+      <DependentUpon>201802221517265_AddIDtoGeneralVolunteerViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221535591_AddPhysicanViewModel.cs" />
+    <Compile Include="Migrations\201802221535591_AddPhysicanViewModel.Designer.cs">
+      <DependentUpon>201802221535591_AddPhysicanViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221549232_AddCLinicalViewModel.cs" />
+    <Compile Include="Migrations\201802221549232_AddCLinicalViewModel.Designer.cs">
+      <DependentUpon>201802221549232_AddCLinicalViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221558161_AddInterpreterViewModel.cs" />
+    <Compile Include="Migrations\201802221558161_AddInterpreterViewModel.Designer.cs">
+      <DependentUpon>201802221558161_AddInterpreterViewModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Events.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Volunteer.cs" />
+    <Compile Include="Models\VolunteerViewFolder\ClinicalVolunteersViewModel.cs" />
+    <Compile Include="Models\VolunteerViewFolder\GeneralVolunteer.cs" />
+    <Compile Include="Models\VolunteerViewFolder\InterpreterViewModel.cs" />
+    <Compile Include="Models\VolunteerViewFolder\PhysicianVolunteerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -361,11 +393,9 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Physicians\GetPhysicianForm.cshtml" />
     <Content Include="Views\NonPhysicianClinical\GetNonPhysicianForm.cshtml" />
     <Content Include="Views\PartnerClinic\GetPartnerClinic.cshtml" />
     <Content Include="Views\Donate\GetDonate.cshtml" />
-    <Content Include="Views\GeneralVolunteer\GetNonClinicForm.cshtml" />
     <Content Include="Views\Interpreter\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetVolunteerCommentForm.cshtml" />
     <Content Include="Views\ReferAPatient\ReferAPatient.cshtml" />
@@ -386,21 +416,11 @@
     <Content Include="Views\AboutUs\staff.cshtml" />
     <Content Include="Views\AboutUs\stories.cshtml" />
     <Content Include="Views\AboutUs\testimonials.cshtml" />
-    <Content Include="Views\Physicians\Create.cshtml" />
-    <Content Include="Views\Physicians\Delete.cshtml" />
-    <Content Include="Views\Physicians\Details.cshtml" />
-    <Content Include="Views\Physicians\Edit.cshtml" />
-    <Content Include="Views\Physicians\Index.cshtml" />
     <Content Include="Views\NonPhysicianClinical\Create.cshtml" />
     <Content Include="Views\NonPhysicianClinical\Delete.cshtml" />
     <Content Include="Views\NonPhysicianClinical\Details.cshtml" />
     <Content Include="Views\NonPhysicianClinical\Edit.cshtml" />
     <Content Include="Views\NonPhysicianClinical\Index.cshtml" />
-    <Content Include="Views\GeneralVolunteer\Create.cshtml" />
-    <Content Include="Views\GeneralVolunteer\Delete.cshtml" />
-    <Content Include="Views\GeneralVolunteer\Details.cshtml" />
-    <Content Include="Views\GeneralVolunteer\Edit.cshtml" />
-    <Content Include="Views\GeneralVolunteer\Index.cshtml" />
     <Content Include="Views\Interpreter\Create.cshtml" />
     <Content Include="Views\Interpreter\Delete.cshtml" />
     <Content Include="Views\Interpreter\Details.cshtml" />
@@ -420,6 +440,10 @@
     <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Index.cshtml" />
+    <Content Include="Views\Physican\Index.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Index.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -433,6 +457,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802191711521_InitialCreate1.resx">
       <DependentUpon>201802191711521_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802220130298_AddedVolunteers.resx">
+      <DependentUpon>201802220130298_AddedVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221447592_AddGeneralVolunteerViewModel.resx">
+      <DependentUpon>201802221447592_AddGeneralVolunteerViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221517265_AddIDtoGeneralVolunteerViewModel.resx">
+      <DependentUpon>201802221517265_AddIDtoGeneralVolunteerViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221535591_AddPhysicanViewModel.resx">
+      <DependentUpon>201802221535591_AddPhysicanViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221549232_AddCLinicalViewModel.resx">
+      <DependentUpon>201802221549232_AddCLinicalViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221558161_AddInterpreterViewModel.resx">
+      <DependentUpon>201802221558161_AddInterpreterViewModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

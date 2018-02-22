@@ -19,10 +19,6 @@ namespace SOSWebApp.Controllers
         {
             return View(db.Events.ToList());
         }
-        public ActionResult GetCreateEvents()
-        {
-            return View(db.Events.ToList());
-        }
         // GET: Event/Details/5
         public ActionResult Details(int? id)
         {
