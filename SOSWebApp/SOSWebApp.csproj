@@ -202,7 +202,7 @@
     <Compile Include="Controllers\InterpreterVolunteerController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnerClinicController.cs" />
-    <Compile Include="Controllers\PhysicanController.cs" />
+    <Compile Include="Controllers\PhysicianVolunteerViewController.cs" />
     <Compile Include="Controllers\ReferAPatientController.cs" />
     <Compile Include="Controllers\StaffAccessController.cs" />
     <Compile Include="Controllers\VolunteerController.cs" />
@@ -257,6 +257,10 @@
     <Compile Include="Migrations\201802252326161_Test_IsNonClinicalFix.cs" />
     <Compile Include="Migrations\201802252326161_Test_IsNonClinicalFix.Designer.cs">
       <DependentUpon>201802252326161_Test_IsNonClinicalFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261751454_Update_ViewModels_SetBool.cs" />
+    <Compile Include="Migrations\201802261751454_Update_ViewModels_SetBool.Designer.cs">
+      <DependentUpon>201802261751454_Update_ViewModels_SetBool.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -456,13 +460,26 @@
     <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
-    <Content Include="Views\Physican\Index.cshtml" />
-    <Content Include="Views\ClinicalVolunteer\Index.cshtml" />
-    <Content Include="Views\InterpreterVolunteer\Index.cshtml" />
     <Content Include="Views\GeneralVolunteerView\Index.cshtml" />
     <Content Include="Views\GeneralVolunteerView\Details.cshtml" />
     <Content Include="Views\GeneralVolunteerView\Create.cshtml" />
     <Content Include="Views\GeneralVolunteerView\Edit.cshtml" />
+    <Content Include="Views\PhysicianVolunteerView\Create.cshtml" />
+    <Content Include="Views\PhysicianVolunteerView\Index.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Delete.cshtml" />
+    <Content Include="Views\PhysicianVolunteerView\Edit.cshtml" />
+    <Content Include="Views\PhysicianVolunteerView\Details.cshtml" />
+    <Content Include="Views\PhysicianVolunteerView\Delete.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Create.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Index.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Details.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Edit.cshtml" />
+    <Content Include="Views\ClinicalVolunteer\Delete.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Create.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Index.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Details.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Edit.cshtml" />
+    <Content Include="Views\InterpreterVolunteer\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -506,6 +523,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802252326161_Test_IsNonClinicalFix.resx">
       <DependentUpon>201802252326161_Test_IsNonClinicalFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261751454_Update_ViewModels_SetBool.resx">
+      <DependentUpon>201802261751454_Update_ViewModels_SetBool.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

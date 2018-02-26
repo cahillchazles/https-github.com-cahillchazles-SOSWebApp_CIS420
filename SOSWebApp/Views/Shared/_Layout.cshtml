@@ -18,84 +18,6 @@
 
 </style>
 <body>
-    @*<nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/Home/Home"><font color="white">SOS Louisville</font></a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/Home/Home"><font color="white">Home</font></a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="/Home/About"><font color="white">About Us</font>
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/AboutUs/board">Board of Directors</a></li>
-                        <li><a href="/AboutUs/staff">Staff</a></li>
-                        <li><a href="/AboutUs/testimonials">Patient Testimonials</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><font color="white">Language</font>
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a>
-                        <div id="google_translate_element"></div>
-                            <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement({
-                                        pageLanguage: 'en',
-                                        includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-                                    }, 'google_translate_element');
-                                }
-                            </script>
-                            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                        </a></a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><font color="white">Get Involved</font>
-                     <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/VolunteersForm/GetPhysicianForm">Physician Voluteer Form</a></li>
-                        <li><a href="/VolunteersForm/GetNonPhysicianForm">Non-Physician Clinical Volunteer Application</a></li>
-                        <li><a href="/VolunteersForm/GetNonClinicForm">General (Non-Clinical and Student) Volunteer Form</a></li>
-                        <li><a href="/VolunteersForm/GetInterpreterForm">Medical Interpreter Volunteer Form</a></li>
-                        <li><a href="/VolunteersForm/GetVolunteerCommentForm">Volunteer Comment Form</a></li>
-                    </ul>
-                </li>
-                <li><a href="/ReferAPatient/ReferAPatient"><font color="white">Refer a Patient</font></a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><font color="white">Get Help</font>
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/PartnerClinic/GetPartnerClinic">Partner Clinics</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><font color="white">Events</font>
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/Events/GetCalendar">Event Calender</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://soslouisville.kindful.com/"><font color="white">Donate</font></a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><font color="white">Staff Login</font>
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/StaffAccess/GetLoginScreen">Staff Login</a></li>
-                        <li><a href="/StaffAccess/GetCreateEvents">Create Event</a></li>
-                        <li><a href="/StaffAccess/GetManageEvents">Manage Event</a></li>
-                        <li><a href="/StaffAccess/GetManageVolunteers">Manage Volunteers</a></li>
-                        <li><a href="/StaffAccess/GetModifyMedicalInterpreterVolunteers">Manage Medical Interpreters</a></li>
-                        <li><a href="/StaffAccess/GetModifyNonClinicalVolunteers">Manage Non-Clinical Volunteers</a></li>
-                        <li><a href="/StaffAccess/GetModifyNonPhysicianVolunteers">Manage Non-Physician Volunteers</a></li>
-                        <li><a href="/StaffAccess/GetModifyPhysicianVolunteers">Manage Physician Volunteer</a></li>
-                        <li><a href="/StaffAccess/GetReports">Reports</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>*@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="/Home/Home"><img src="~/Content/images/SOS Tranparent Small.png"  /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,13 +68,13 @@
                         Get Involved
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/VolunteersForm/GetPhysicianForm">Physician Volunteer Form</a>
+                        <a class="dropdown-item" href="/PhysicianVolunteerView/Create">Physician Volunteer Form</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/VolunteersForm/GetNonPhysicianForm">Non-Physician Clinical Volunteer Application</a>
+                        <a class="dropdown-item" href="/ClinicalVolunteer/Create">Non-Physician Clinical Volunteer Application</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/VolunteersForm/GetNonClinicForm">General (Non-Clinical and Student) Volunteer Form</a>
+                        <a class="dropdown-item" href="/GeneralVolunteerView/Create">General (Non-Clinical and Student) Volunteer Form</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/VolunteersForm/GetInterpreterForm">Medical Interpreter Volunteer Form</a>
+                        <a class="dropdown-item" href="/InterpreterVolunteer/Create">Medical Interpreter Volunteer Form</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/VolunteersForm/GetVolunteerCommentForm">Volunteer Comment Form</a>
                     </div>

@@ -1,11 +1,5 @@
 ﻿@model IEnumerable<SOSWebApp.Models.Volunteer>
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -42,10 +36,10 @@
             @Html.DisplayNameFor(model => model.Birthday)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IsClinical)
+            @Html.DisplayNameFor(model => model.IsPhysician)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ProfessionalTitle)
+            @Html.DisplayNameFor(model => model.MedicalSpecialty)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.LicensedState)
@@ -54,10 +48,10 @@
             @Html.DisplayNameFor(model => model.LicenseNumber)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MedicalSpecialty)
+            @Html.DisplayNameFor(model => model.ProfessionalAlmaMater)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.tShirtSize)
+            @Html.DisplayNameFor(model => model.GraduationDate)
         </th>*@
         <th></th>
     </tr>
@@ -95,10 +89,10 @@
             @Html.DisplayFor(modelItem => item.Birthday)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.IsClinical)
+            @Html.DisplayFor(modelItem => item.IsPhysician)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ProfessionalTitle)
+            @Html.DisplayFor(modelItem => item.MedicalSpecialty)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.LicensedState)
@@ -107,10 +101,10 @@
             @Html.DisplayFor(modelItem => item.LicenseNumber)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MedicalSpecialty)
+            @Html.DisplayFor(modelItem => item.ProfessionalAlmaMater)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.tShirtSize)
+            @Html.DisplayFor(modelItem => item.GraduationDate)
         </td>*@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

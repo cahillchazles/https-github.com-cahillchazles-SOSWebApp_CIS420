@@ -36,6 +36,9 @@ namespace SOSWebApp.Models.VolunteerViewFolder
 
         public string Birthday { get; set; }
 
+        [Display(Name = "Confirm Medical Interpreter")]
+        public bool IsInterpreter { get; set; }
+
         [Display(Name = "Language Spoken")]
         public string Language { get; set; }
     }

@@ -36,6 +36,9 @@ namespace SOSWebApp.Models.VolunteerViewFolder
 
         public string Birthday { get; set; }
 
+        [Display(Name = "Confirm Clinical Volunteer")]
+        public bool IsClinical { get; set; }
+
         [Display(Name = "Professional Title")]
         public string ProfessionalTitle { get; set; }
 

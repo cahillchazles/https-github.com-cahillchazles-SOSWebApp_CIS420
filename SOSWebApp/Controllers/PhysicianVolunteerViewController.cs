@@ -2,17 +2,28 @@
 using SOSWebApp.Models.VolunteerViewFolder;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Net;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity;
 
 namespace SOSWebApp.Controllers
 {
-    public class ClinicalVolunteerController : Controller
+    public class PhysicianVolunteerViewController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        public ActionResult Index()
+        {
+            var query = (from v in db.Volunteers
+                         where v.IsPhysician == true
+                         orderby v.LastName
+                         select v).ToList();
+            return View(query.ToList());
+        }
+
 
         public ActionResult Create()
         {
@@ -22,7 +33,7 @@ namespace SOSWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsClinical,ProfessionalTitle,LicensedState,LicenseNumber,MedicalSpecialty,tShirtSize")] Volunteer volunteer)
+        public ActionResult Create([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsPhysician,MedialSpecialty,LicensedState,LicenseNumber,ProfessionalAlmaMater,GraduationDate")] Volunteer volunteer)
         {
             if (ModelState.IsValid)
             {
@@ -34,14 +45,6 @@ namespace SOSWebApp.Controllers
             return View(volunteer);
         }
 
-        public ActionResult Index()
-        {
-            var query = (from v in db.Volunteers
-                         where v.IsClinical == true
-                         orderby v.LastName
-                         select v).ToList();
-            return View(query.ToList());
-        }
 
         public ActionResult Edit(int? id)
         {
@@ -62,7 +65,7 @@ namespace SOSWebApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsClinical,ProfessionalTitle,LicensedState,LicenseNumber,MedicalSpecialty,tShirtSize")] Volunteer volunteer)
+        public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsPhysician,MedialSpecialty,LicensedState,LicenseNumber,ProfessionalAlmaMater,GraduationDate")] Volunteer volunteer)
         {
             if (ModelState.IsValid)
             {
