@@ -34,7 +34,7 @@ namespace SOSWebApp.Models.VolunteerViewFolder
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
 
         [Display(Name = "Language Spoken")]
         public string Language { get; set; }

@@ -34,7 +34,10 @@ namespace SOSWebApp.Models.VolunteerViewFolder
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
+
+        [Display(Name = "Confirm Non-Clinical Volunteer")]
+        public bool IsNonClinical { get; set; }
 
         [Display(Name = "T Shirt Size")]
         public string tShirtSize { get; set; }
@@ -46,6 +49,8 @@ namespace SOSWebApp.Models.VolunteerViewFolder
 
         [Display(Name = "Personal Interests")]
         public string Interest { get; set; }
+
+     
 
     }
 }

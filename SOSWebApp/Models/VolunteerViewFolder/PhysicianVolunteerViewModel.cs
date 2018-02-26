@@ -34,7 +34,7 @@ namespace SOSWebApp.Models.VolunteerViewFolder
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
 
         [Display(Name = "Medical Specialty")]
         public string MedicalSpecialty { get; set; }
@@ -49,7 +49,7 @@ namespace SOSWebApp.Models.VolunteerViewFolder
         public string ProfessionalAlmaMater { get; set; }
 
         [Display(Name = "Graduation Date")]
-        public DateTime GraduationDate { get; set; }
+        public string GraduationDate { get; set; }
 
     }
 }

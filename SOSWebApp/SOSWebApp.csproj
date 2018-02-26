@@ -48,6 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -117,12 +123,6 @@
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -241,6 +241,22 @@
     <Compile Include="Migrations\201802221558161_AddInterpreterViewModel.cs" />
     <Compile Include="Migrations\201802221558161_AddInterpreterViewModel.Designer.cs">
       <DependentUpon>201802221558161_AddInterpreterViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251631371_Fix.cs" />
+    <Compile Include="Migrations\201802251631371_Fix.Designer.cs">
+      <DependentUpon>201802251631371_Fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251657156_Testing_birthday_fix.cs" />
+    <Compile Include="Migrations\201802251657156_Testing_birthday_fix.Designer.cs">
+      <DependentUpon>201802251657156_Testing_birthday_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251705009_Testing_birthday_fix2.cs" />
+    <Compile Include="Migrations\201802251705009_Testing_birthday_fix2.Designer.cs">
+      <DependentUpon>201802251705009_Testing_birthday_fix2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802252326161_Test_IsNonClinicalFix.cs" />
+    <Compile Include="Migrations\201802252326161_Test_IsNonClinicalFix.Designer.cs">
+      <DependentUpon>201802252326161_Test_IsNonClinicalFix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -440,10 +456,13 @@
     <Content Include="Views\VolunteersForm\GetNonClinicForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetNonPhysicianForm.cshtml" />
-    <Content Include="Views\GeneralVolunteerView\Index.cshtml" />
     <Content Include="Views\Physican\Index.cshtml" />
     <Content Include="Views\ClinicalVolunteer\Index.cshtml" />
     <Content Include="Views\InterpreterVolunteer\Index.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Index.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Details.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Create.cshtml" />
+    <Content Include="Views\GeneralVolunteerView\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -475,6 +494,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802221558161_AddInterpreterViewModel.resx">
       <DependentUpon>201802221558161_AddInterpreterViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251631371_Fix.resx">
+      <DependentUpon>201802251631371_Fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251657156_Testing_birthday_fix.resx">
+      <DependentUpon>201802251657156_Testing_birthday_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251705009_Testing_birthday_fix2.resx">
+      <DependentUpon>201802251705009_Testing_birthday_fix2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802252326161_Test_IsNonClinicalFix.resx">
+      <DependentUpon>201802252326161_Test_IsNonClinicalFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

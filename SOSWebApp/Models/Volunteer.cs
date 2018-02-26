@@ -34,7 +34,7 @@ namespace SOSWebApp.Models
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
 
         public bool IsPhysician { get; set; }
 
@@ -57,7 +57,7 @@ namespace SOSWebApp.Models
         public string ProfessionalAlmaMater { get; set; }
 
         [Display(Name = "Graduation Date")]
-        public DateTime GraduationDate { get; set; }
+        public string GraduationDate { get; set; }
 
         [Display(Name = "Professional Title")]
         public string ProfessionalTitle { get; set; }
