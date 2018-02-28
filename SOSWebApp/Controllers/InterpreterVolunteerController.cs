@@ -28,7 +28,7 @@ namespace SOSWebApp.Controllers
             {
                 db.Volunteers.Add(volunteer);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(volunteer);

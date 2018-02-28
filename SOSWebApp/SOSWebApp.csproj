@@ -413,39 +413,22 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\NonPhysicianClinical\GetNonPhysicianForm.cshtml" />
     <Content Include="Views\PartnerClinic\GetPartnerClinic.cshtml" />
     <Content Include="Views\Donate\GetDonate.cshtml" />
-    <Content Include="Views\Interpreter\GetInterpreterForm.cshtml" />
     <Content Include="Views\VolunteersForm\GetVolunteerCommentForm.cshtml" />
     <Content Include="Views\ReferAPatient\ReferAPatient.cshtml" />
     <Content Include="Views\StaffAccess\GetLoginScreen.cshtml" />
     <Content Include="Views\StaffAccess\StaffAccessScreen.cshtml" />
-    <Content Include="Views\Event\GetCreateEvents.cshtml" />
     <Content Include="Views\StaffAccess\GetManageEvents.cshtml" />
     <Content Include="Views\StaffAccess\GetReports.cshtml" />
     <Content Include="Views\StaffAccess\GetScheduleVolunteers.cshtml" />
     <Content Include="Views\StaffAccess\GetManageVolunteers.cshtml" />
-    <Content Include="Views\StaffAccess\GetModifyPhysicianVolunteers.cshtml" />
-    <Content Include="Views\StaffAccess\GetModifyNonPhysicianVolunteers.cshtml" />
-    <Content Include="Views\StaffAccess\GetModifyNonClinicalVolunteers.cshtml" />
-    <Content Include="Views\StaffAccess\GetModifyMedicalInterpreterVolunteers.cshtml" />
     <Content Include="Views\Events\GetCalendar.cshtml" />
     <Content Include="Views\AboutUs\aboutUs.cshtml" />
     <Content Include="Views\AboutUs\board.cshtml" />
     <Content Include="Views\AboutUs\staff.cshtml" />
     <Content Include="Views\AboutUs\stories.cshtml" />
     <Content Include="Views\AboutUs\testimonials.cshtml" />
-    <Content Include="Views\NonPhysicianClinical\Create.cshtml" />
-    <Content Include="Views\NonPhysicianClinical\Delete.cshtml" />
-    <Content Include="Views\NonPhysicianClinical\Details.cshtml" />
-    <Content Include="Views\NonPhysicianClinical\Edit.cshtml" />
-    <Content Include="Views\NonPhysicianClinical\Index.cshtml" />
-    <Content Include="Views\Interpreter\Create.cshtml" />
-    <Content Include="Views\Interpreter\Delete.cshtml" />
-    <Content Include="Views\Interpreter\Details.cshtml" />
-    <Content Include="Views\Interpreter\Edit.cshtml" />
-    <Content Include="Views\Interpreter\Index.cshtml" />
     <Content Include="Views\Event\Create.cshtml" />
     <Content Include="Views\Event\Delete.cshtml" />
     <Content Include="Views\Event\Details.cshtml" />
@@ -549,7 +532,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50586</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

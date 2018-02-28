@@ -3,48 +3,50 @@
 @{
     ViewBag.Title = "Details";
 }
+<br/>
+<br/>
+<br/>
+<center>
+    <div>
+        <h4>About Event</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.EventName)
+            </dt>
 
-<h2>Details</h2>
+            <dd>
+                @Html.DisplayFor(model => model.EventName)
+            </dd>
 
-<div>
-    <h4>Events</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.EventName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.EventDate)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.EventName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.EventDate)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EventDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.EventTime)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.EventDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.EventTime)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EventTime)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.EventLocation)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.EventTime)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.EventLocation)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EventLocation)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EventLocation)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</center>
