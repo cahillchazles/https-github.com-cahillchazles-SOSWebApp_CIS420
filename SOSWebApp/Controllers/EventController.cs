@@ -10,6 +10,7 @@ using SOSWebApp.Models;
 
 namespace SOSWebApp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class EventController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

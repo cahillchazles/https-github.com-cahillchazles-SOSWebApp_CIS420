@@ -11,6 +11,7 @@ using System.Data.Entity;
 
 namespace SOSWebApp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class GeneralVolunteerViewController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -56,7 +57,7 @@ namespace SOSWebApp.Controllers
         }
 
 
-
+        [AllowAnonymous]
         public ActionResult Create()
         {
             var volunteer = new Volunteer();
@@ -65,6 +66,7 @@ namespace SOSWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Create([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsNonClinical, tShirtSize,Eployer,DescribesYou,Interest")] Volunteer volunteer)
         {
             if (ModelState.IsValid)

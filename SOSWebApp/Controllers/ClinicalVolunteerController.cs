@@ -10,10 +10,11 @@ using System.Web.Mvc;
 
 namespace SOSWebApp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ClinicalVolunteerController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
+        [AllowAnonymous]
         public ActionResult Create()
         {
             var volunteer = new Volunteer();
@@ -22,6 +23,7 @@ namespace SOSWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Create([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsClinical,ProfessionalTitle,LicensedState,LicenseNumber,MedicalSpecialty,tShirtSize")] Volunteer volunteer)
         {
             if (ModelState.IsValid)
@@ -33,7 +35,7 @@ namespace SOSWebApp.Controllers
 
             return View(volunteer);
         }
-
+        [Authorize]
         public ActionResult Index()
         {
             var query = (from v in db.Volunteers
@@ -42,7 +44,7 @@ namespace SOSWebApp.Controllers
                          select v).ToList();
             return View(query.ToList());
         }
-
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -62,6 +64,7 @@ namespace SOSWebApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsClinical,ProfessionalTitle,LicensedState,LicenseNumber,MedicalSpecialty,tShirtSize")] Volunteer volunteer)
         {
             if (ModelState.IsValid)
@@ -72,7 +75,7 @@ namespace SOSWebApp.Controllers
             }
             return View(volunteer);
         }
-
+        [Authorize]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -87,7 +90,7 @@ namespace SOSWebApp.Controllers
             return View(volunteer);
         }
 
-
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -105,6 +108,7 @@ namespace SOSWebApp.Controllers
         // POST: Event/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
             Volunteer volunteer = db.Volunteers.Find(id);

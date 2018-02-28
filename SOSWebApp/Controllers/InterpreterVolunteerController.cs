@@ -10,10 +10,11 @@ using System.Web.Mvc;
 
 namespace SOSWebApp.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class InterpreterVolunteerController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
+        [AllowAnonymous]
         public ActionResult Create()
         {
             var volunteer = new Volunteer();
@@ -22,6 +23,7 @@ namespace SOSWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Create([Bind(Include = "ID,FirstName,LastName,PreferredName,Address,City,State,ZipCode,Email,PhoneNumber,Birthday,IsInterpreter,Language")] Volunteer volunteer)
         {
             if (ModelState.IsValid)
