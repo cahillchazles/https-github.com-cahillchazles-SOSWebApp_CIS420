@@ -6,7 +6,6 @@ using System.Web.Mvc;
 
 namespace SOSWebApp.Controllers
 {
-    [Authorize(Roles = "Admin")]
     public class StaffAccessController : Controller
     {
         // GET: StaffAccess
