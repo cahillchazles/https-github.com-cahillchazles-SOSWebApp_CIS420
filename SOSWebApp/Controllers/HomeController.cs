@@ -15,8 +15,6 @@ namespace SOSWebApp.Controllers
     public class HomeController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        private string fromEmail;
-        private string fromEmailPassword;
 
         public ActionResult Index()
         {
@@ -42,13 +40,14 @@ namespace SOSWebApp.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            EmailFormModel email = new EmailFormModel();
+            Contact(email);
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Contact(EmailFormModel model)
+        public void  Contact(EmailFormModel model)
         {
             if (ModelState.IsValid)
             {
@@ -62,13 +61,16 @@ namespace SOSWebApp.Controllers
                 NetworkCredential credentials = new NetworkCredential("sostestemail270@gmail.com", "w3c@m31!");
                 debugSmtpClient.UseDefaultCredentials = false;
                 debugSmtpClient.Credentials = credentials;
+
 #else
                 //Release SMTP Settings
             var releaseSmtpClient = new SmtpClient();
             releaseSmtpClient.EnableSsl = false;
             releaseSmtpClient.Host = "relay-hosting.secureserver.net";
             releaseSmtpClient.Port = 25;
-# endif
+
+
+#endif
 
 
 
@@ -84,16 +86,18 @@ namespace SOSWebApp.Controllers
                 {
                     message.To.Add(new MailAddress(email));  // replace with valid value 
                 }
-                    message.From = new MailAddress("soslouisville@outlook.com");  // replace with valid value
+                    message.From = new MailAddress("sostestemail270@gmail.com");  // replace with valid value
                     message.Subject = "Your email subject";
                     message.Body = string.Format(body, model.FromName, model.FromEmail, model.Message);
-                    //message.Attachments.Add(new Attachment(HttpContext.Server.MapPath("~/App_Data/Test.docx")));
-                    message.IsBodyHtml = true;
-                
-                //if (model.Upload != null && model.Upload.ContentLength > 0)
-                //{
-                //    message.Attachments.Add(new Attachment(model.Upload.InputStream, Path.GetFileName(model.Upload.FileName)));
-                //}
+                //message.Attachments.Add(new Attachment(HttpContext.Server.MapPath("~/App_Data/Test.docx")));
+                message.IsBodyHtml = true;
+
+
+                if (model.Upload != null && model.Upload.ContentLength > 0)
+                {
+                    message.Attachments.Add(new Attachment(model.Upload.InputStream, Path.GetFileName(model.Upload.FileName)));
+
+                }
                 //using (var smtp = new SmtpClient())
                 //{
                 //    var credential = new NetworkCredential
@@ -102,14 +106,14 @@ namespace SOSWebApp.Controllers
                 //        Password = "w3c@m31!"  // replace with valid value
                 //    };
                 //    smtp.Credentials = credential;
-                //    smtp.Host = "smtp-gmail.com";
+                //    smtp.Host = "smtp.gmail.com";
                 //    smtp.Port = 587;
                 //    smtp.EnableSsl = true;
                 //    smtp.Send(message);
                 //    return RedirectToAction("Sent");
                 //}
+
             }
-            return View(model);
         }
 
         public ActionResult Sent()
