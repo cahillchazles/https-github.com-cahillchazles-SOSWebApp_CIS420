@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<SOSWebApp.Models.Events>
 @{
     ViewBag.Title = "GetCalendar";
 }
@@ -8,10 +8,48 @@
 <br />
 <br />
 
+<head>
+    <style type="text/css">
+        .event {
+            padding-top: 2em;
+            text-align: center;
+            border: 2px black;
+        }
 
-<center><h2>Upcoming Events:</h2></center>
+        .table {
+            margin-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="event">Upcoming Events:</h2>
 
-<center>
-    <iframe src="https://calendar.google.com/calendar/embed?src=utc2s3sghve94gkv0d5818nrqs%40group.calendar.google.com&ctz=America%2FNew_York"
-            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</center>
+    <table class="table">
+        <caption>For directions to the location: <a href="https://www.google.com/maps/place/Louisville,+KY+40204/38.2386262,-85.7274902,15z/data=!3m1!4b1!4m5!3m4!1s0x88690cd324d7e2d9:0xabc6e21d0fb51a34!8m2!3d38.2415063!4d-85.7230719" target="_blank">Click Here</a></caption>
+        <!--<thead>@Html.DisplayNameFor(model => model.EventName)</thead>
+            <thead>@Html.DisplayNameFor(model => model.EventDate)</thead>
+            <thead>@Html.DisplayNameFor(model => model.EventTime)</thead>
+            <thead>@Html.DisplayNameFor(model => model.EventLocation)</thead> -->
+        <tr>
+            <td><b>Name</b></td>
+            <td><b>Date</b></td>
+            <td><b>Start Time</b></td>
+            <td><b>Location</b></td>
+        </tr>
+        @foreach (var item in Model)
+        {
+
+            if (item.EventDate >= DateTime.Today)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.EventName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EventDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EventTime)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EventLocation)</td>
+                </tr>
+            }
+        }
+
+
+    </table>
+</body>
