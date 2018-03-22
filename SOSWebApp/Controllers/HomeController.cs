@@ -41,13 +41,13 @@ namespace SOSWebApp.Controllers
         {
             ViewBag.Message = "Your contact page.";
             EmailFormModel email = new EmailFormModel();
-            Contact(email);
+            Contact2(email);
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public void  Contact(EmailFormModel model)
+        public void  Contact2(EmailFormModel model)
         {
             if (ModelState.IsValid)
             {
@@ -72,12 +72,13 @@ namespace SOSWebApp.Controllers
 
 #endif
 
+                //Super duper fun logic stuff aronies. 
 
 
 
 
 
-                var emailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
+                var emailList = db.Volunteers.Where(Volunteer => Volunteer.IsPhysician).Select(Volunteer => Volunteer.Email).ToList();
 
                 var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
                 var message = new MailMessage();
@@ -98,20 +99,21 @@ namespace SOSWebApp.Controllers
                     message.Attachments.Add(new Attachment(model.Upload.InputStream, Path.GetFileName(model.Upload.FileName)));
 
                 }
-                //using (var smtp = new SmtpClient())
-                //{
-                //    var credential = new NetworkCredential
-                //    {
-                //        UserName = "sostestemail270@gmail.com",  // replace with valid value
-                //        Password = "w3c@m31!"  // replace with valid value
-                //    };
-                //    smtp.Credentials = credential;
-                //    smtp.Host = "smtp.gmail.com";
-                //    smtp.Port = 587;
-                //    smtp.EnableSsl = true;
-                //    smtp.Send(message);
-                //    return RedirectToAction("Sent");
-                //}
+
+                using (var smtp = new SmtpClient())
+                {
+                    var credential = new NetworkCredential
+                    {
+                        UserName = "sostestemail270@gmail.com",  // replace with valid value
+                        Password = "w3c@m31!"  // replace with valid value
+                    };
+                    smtp.Credentials = credential;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.EnableSsl = true;
+                    smtp.Send(message);
+                    //return View("Sent");
+                }
 
             }
         }

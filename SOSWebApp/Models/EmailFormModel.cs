@@ -5,6 +5,7 @@ namespace MVCEmail.Models
 {
     public class EmailFormModel
     {
+        public string radioCheck { get; set; }
         [Required, Display(Name = "Your name")]
         public string FromName { get; set; }
 
