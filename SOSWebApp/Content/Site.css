@@ -226,3 +226,30 @@ body {
         opacity: 1
     }
 }
+
+.event {
+    padding-top: 2em;
+    text-align: center;
+    border: 2px black;
+}
+
+td {
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: darkgrey;
+}
+
+.information:hover {
+    background-color: #ddd;
+}
+
+.table {
+    margin-left: 2em;
+}

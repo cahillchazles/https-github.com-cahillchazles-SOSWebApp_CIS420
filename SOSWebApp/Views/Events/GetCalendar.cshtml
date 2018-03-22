@@ -8,29 +8,19 @@
 <br />
 <br />
 
-<head>
-    <style type="text/css">
-        .event {
-            padding-top: 2em;
-            text-align: center;
-            border: 2px black;
-        }
 
-        .table {
-            margin-left: 2em;
-        }
-    </style>
-</head>
 <body>
     <h2 class="event">Upcoming Events:</h2>
 
     <table class="table">
-        <caption>For directions to the location: <a href="https://www.google.com/maps/place/Louisville,+KY+40204/38.2386262,-85.7274902,15z/data=!3m1!4b1!4m5!3m4!1s0x88690cd324d7e2d9:0xabc6e21d0fb51a34!8m2!3d38.2415063!4d-85.7230719" target="_blank">Click Here</a></caption>
-        <!--<thead>@Html.DisplayNameFor(model => model.EventName)</thead>
-            <thead>@Html.DisplayNameFor(model => model.EventDate)</thead>
-            <thead>@Html.DisplayNameFor(model => model.EventTime)</thead>
-            <thead>@Html.DisplayNameFor(model => model.EventLocation)</thead> -->
-        <tr>
+        <caption>
+           <center>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.3356518836504!2d-85.74699808423873!3d38.24852067967597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886972c84f040851%3A0xe92a7cbb14b59d6e!2sUniversity+of+Louisville+Hospital!5e0!3m2!1sen!2sus!4v1521574286903" 
+                       width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </center>
+            <!--For directions to the location: <a href="https://www.google.com/maps/place/Louisville,+KY+40204/38.2386262,-85.7274902,15z/data=!3m1!4b1!4m5!3m4!1s0x88690cd324d7e2d9:0xabc6e21d0fb51a34!8m2!3d38.2415063!4d-85.7230719" target="_blank">Click Here</a>-->
+        </caption>
+        <tr class="header">
             <td><b>Name</b></td>
             <td><b>Date</b></td>
             <td><b>Start Time</b></td>
@@ -41,7 +31,7 @@
 
             if (item.EventDate >= DateTime.Today)
             {
-                <tr>
+                <tr class="information">
                     <td>@Html.DisplayFor(modelItem => item.EventName)</td>
                     <td>@Html.DisplayFor(modelItem => item.EventDate)</td>
                     <td>@Html.DisplayFor(modelItem => item.EventTime)</td>
