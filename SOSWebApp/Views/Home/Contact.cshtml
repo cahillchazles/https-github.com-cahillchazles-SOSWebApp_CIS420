@@ -11,17 +11,28 @@
     @Html.AntiForgeryToken()
     <h4>Send your comments.</h4>
     <hr />
+    @*@Html.BeginForm("Contact", "HomeController")*@
     <div class="form-group">
-        @*<input type="radio" name="physcianVolunteer" value="Physcian" /> Send to Physcians<br /><br />
-        <input type="radio" name="clinicalVolunteer" value="Clinical" /> Send to Clinical Staff<br /><br />
-        <input type="radio" name="GeneraelVolunteer" value="Generael" /> Send to Generael Staff<br /><br />
-        <input type="radio" name="interpreterVolunteer" value="Interpreter" /> Send to Medical Interpreters<br /><br />
-        <input type="radio" name="allVolunteer" value="AllVolunteers" checked /> Send to All Volunteers<br /><br />*@
-        @Html.RadioButtonFor(m => m.radioCheck, "physcianVolunteer")
-        @Html.RadioButtonFor(m => m.radioCheck, "clinicalVolunteer")
-        @Html.RadioButtonFor(m => m.radioCheck, "GeneraelVolunteer")
-        @Html.RadioButtonFor(m => m.radioCheck, "interpreterVolunteer")
-        @Html.RadioButtonFor(m => m.radioCheck, "allVolunteer")
+        <p>Send to Physicians?</p>
+        <span>Yes:</span>
+        @Html.RadioButtonFor(m => m.IsPhysicianOnly, true)
+        <span>No:</span>
+        @Html.RadioButtonFor(m => m.IsPhysicianOnly, false)<br/>
+        <p>Send to Clinical Volunteers?</p>
+        <span>Yes:</span>
+        @Html.RadioButtonFor(m => m.IsClinicalOnly, true)
+        <span>No:</span>
+        @Html.RadioButtonFor(m => m.IsClinicalOnly, false)<br/>
+        <p>Send to Generael?</p>
+        <span>Yes:</span>
+        @Html.RadioButtonFor(m => m.IsGeneralOnly, true)
+        <span>No:</span>
+        @Html.RadioButtonFor(m => m.IsGeneralOnly, false)<br/>
+        <p>Send to Medical Interpreter?</p>
+        <span>Yes:</span>
+        @Html.RadioButtonFor(m => m.IsInterpreterOnly, true)
+        <span>No:</span>
+        @Html.RadioButtonFor(m => m.IsInterpreterOnly, false)<br/>
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
