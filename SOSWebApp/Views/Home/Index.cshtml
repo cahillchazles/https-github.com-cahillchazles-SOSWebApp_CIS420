@@ -1,4 +1,7 @@
-﻿@{
+﻿<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+@{
     ViewBag.Title = "Home";
 }
 <head>
@@ -20,7 +23,6 @@
             dots[slideIndex - 1].className += " active";
         }
 
-
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
@@ -29,9 +31,12 @@
             showSlides(slideIndex = n);
         }
 
+
     </script>
 
 </head>
+
+
 <body>
 
     <div id="fb-root"></div>
@@ -43,37 +48,16 @@
             js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-    <br />
-    <br />
-    <br />
-        @*<img src="~/Content/images/heartbeat-background.png" alt="Sample Photo" />*@
-        @*<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="~/Content/images/image_insurgery_04.jpg" alt="First slide">
-                        <div class="carousel-caption">
-                            <h1><span style="color: #e31e1e;"></span></h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Content/images/image_03.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Content/images/standard_Volunteer.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Content/images/awards_pic.jpg" alt="Fourth slide">
 
-                    </div>
-                </div>
-            </div>*@
-        <!-- Slideshow container -->
+    <br />
+
+
+    <section class="container">
         <div class="slideshow-container">
-
             <!-- Full-width images with number and caption text -->
             <div class="mySlides">
                 <div class="numbertext">1 / 3</div>
-                <img src="~/Content/images/image_insurgery_04.jpg" style="width:100%">
+                <img src="~/Content/images/slider/image_insurgery_04.jpg" left="0" style="width:100%">
                 <div class="text">
                     <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
@@ -82,7 +66,7 @@
 
             <div class="mySlides">
                 <div class="numbertext">2 / 3</div>
-                <img src="~/Content/images/image_03.jpg" style="width:100%">
+                <img src="~/Content/images/slider/image_03.jpg" left="0" style="width:100%">
                 <div class="text">
                     <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
@@ -91,9 +75,8 @@
 
             <div class="mySlides">
                 <div class="numbertext">3 / 3</div>
-                <img src="~/Content/images/awards_pic.jpg" style="width:100%">
+                <img src="~/Content/images/slider/awards_pic_Carose-l.jpg" left="0" style="width:100%">
                 <div class="text">
-                    <
                     <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
                 </div>
@@ -112,19 +95,16 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         <!--End SlideShow-->
-        <section class="container"></section><br />
-        @*<center>
-                <section class="container">
-                    <center><font color="red"><h3>Follow us on Facebook and Twitter:</h3></font></center>
-                    <a href="https://www.facebook.com/SurgeryonSundayLouisville" class="fa fa-facebook"></a>
-                    <a href="https://twitter.com/soslouisville" class="fa fa-twitter"></a>
-                </section>
-            </center>*@
+    </section><br />
 
-    <br />
-    <br />
-    <br />
-    <font color="red"><h2>Surgery On Sunday – Louisville, Inc.</h2></font><br />
+
+
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="center">
+        <font color="red"> <h2 style="text-align: center;">Surgery On Sunday – Louisville, Inc.</h2></font><br />
+    </div>
     <h4 style="text-align:justify;"> provides outpatient surgical and endoscopic procedures to patients who are within 250% of the current federal poverty line, have medical need, are symptomatic and/or in a high risk healthcare category (such as family history), and are uninsured or underinsured.  Our licensed physicians, medical and non-clinical support staff,  and healthcare partners provide all services on a volunteer basis.  <span style="color:#ff0000;">Our patients never see a bill</span>. We are a non-profit organization based in Louisville, KY. Our program was founded in 2013 by a group of passionate medical professionals and members of the Louisville community.</h4>
     <br />
     <br />
@@ -137,8 +117,8 @@
 
 
     <script>
-    showSlides(slideIndex);
+        showSlides(slideIndex);
     </script>
-
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 </body>
