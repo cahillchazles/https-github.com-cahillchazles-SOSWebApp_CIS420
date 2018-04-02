@@ -140,6 +140,7 @@ namespace SOSWebApp.Controllers
                 //{
                 //    message.To.Add(new MailAddress(email));  // replace with valid value 
                 //}
+                message.To.Add(new MailAddress("sostestemail270@gmail.com"));  // replace with valid value 
                 message.From = new MailAddress("sostestemail270@gmail.com");  // replace with valid value
                     message.Subject = "Your email subject";
                     message.Body = string.Format(body, model.FromName, model.FromEmail, model.Message);

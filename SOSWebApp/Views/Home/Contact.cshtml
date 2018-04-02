@@ -2,10 +2,10 @@
 @{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<br/>
-<br/>
 <br />
+<br />
+<br />
+<h2>@ViewBag.Title.</h2>
 @using (Html.BeginForm("Contact", "Home", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
@@ -17,22 +17,22 @@
         <span>Yes:</span>
         @Html.RadioButtonFor(m => m.IsPhysicianOnly, true)
         <span>No:</span>
-        @Html.RadioButtonFor(m => m.IsPhysicianOnly, false)<br/>
+        @Html.RadioButtonFor(m => m.IsPhysicianOnly, false)<br />
         <p>Send to Clinical Volunteers?</p>
         <span>Yes:</span>
         @Html.RadioButtonFor(m => m.IsClinicalOnly, true)
         <span>No:</span>
-        @Html.RadioButtonFor(m => m.IsClinicalOnly, false)<br/>
+        @Html.RadioButtonFor(m => m.IsClinicalOnly, false)<br />
         <p>Send to Generael?</p>
         <span>Yes:</span>
         @Html.RadioButtonFor(m => m.IsGeneralOnly, true)
         <span>No:</span>
-        @Html.RadioButtonFor(m => m.IsGeneralOnly, false)<br/>
+        @Html.RadioButtonFor(m => m.IsGeneralOnly, false)<br />
         <p>Send to Medical Interpreter?</p>
         <span>Yes:</span>
         @Html.RadioButtonFor(m => m.IsInterpreterOnly, true)
         <span>No:</span>
-        @Html.RadioButtonFor(m => m.IsInterpreterOnly, false)<br/>
+        @Html.RadioButtonFor(m => m.IsInterpreterOnly, false)<br />
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
@@ -67,6 +67,9 @@
         </div>
     </div>
 }
+<br />
+<br />
+<br />
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
