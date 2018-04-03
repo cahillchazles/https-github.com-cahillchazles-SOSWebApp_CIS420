@@ -88,7 +88,7 @@ namespace SOSWebApp.Controllers
                     }
 
                 }
-                else if(model.IsClinicalOnly)
+                if(model.IsClinicalOnly)
                 {
                     var clinicalEmailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
 
@@ -99,7 +99,7 @@ namespace SOSWebApp.Controllers
                     }
 
                 }
-                else if(model.IsGeneralOnly)
+                if(model.IsGeneralOnly)
                 {
                     var generalEmailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
 
@@ -110,7 +110,7 @@ namespace SOSWebApp.Controllers
                     }
 
                 }
-                else if(model.IsInterpreterOnly)
+                if(model.IsInterpreterOnly)
                 {
                     var interpreterEmailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
 
@@ -121,17 +121,17 @@ namespace SOSWebApp.Controllers
                     }
 
                 }
-                else
-                {
-                    var emailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
+                //else
+                //{
+                //    var emailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
 
 
-                    foreach (var email in emailList)
-                    {
-                        message.To.Add(new MailAddress(email));  // replace with valid value 
-                    }
+                //    foreach (var email in emailList)
+                //    {
+                //        message.To.Add(new MailAddress(email));  // replace with valid value 
+                //    }
 
-                }
+                //}
                 //var stop = "stop";
                 //var emailList = db.Volunteers.Select(Volunteer => Volunteer.Email).ToList();
 
@@ -142,7 +142,7 @@ namespace SOSWebApp.Controllers
                 //}
                 message.To.Add(new MailAddress("sostestemail270@gmail.com"));  // replace with valid value 
                 message.From = new MailAddress("sostestemail270@gmail.com");  // replace with valid value
-                    message.Subject = "Your email subject";
+                    message.Subject = "SOS Louisville Email Blast";
                     message.Body = string.Format(body, model.FromName, model.FromEmail, model.Message);
                 //message.Attachments.Add(new Attachment(HttpContext.Server.MapPath("~/App_Data/Test.docx")));
                 message.IsBodyHtml = true;
